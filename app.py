@@ -7,9 +7,7 @@ def login():
         username = request.form["username"]
         password = request.form["password"]
         
-        print("username:",username,"password:",password)
-        if username=="" and password =="":
-            return render_template("index.html")
+
 
     # check if the username and password are correct
         if username == 'deepath' and password =='1':
@@ -17,7 +15,7 @@ def login():
             return render_template('home.html')
             
     return render_template("index.html")
-@app.route('/signup', methods=["get"])
+@app.route('/signup.html', methods=["get"])
 def signup():
     return render_template('signup.html')
 
