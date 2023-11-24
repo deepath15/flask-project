@@ -119,7 +119,7 @@ form input::placeholder{
     flex-direction: column;
     gap: 10px;
 }
-.button-group #createAccount{
+#createAccount{
  background-color: transparent;
  border: none;
 height: 40px;
