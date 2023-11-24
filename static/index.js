@@ -8,5 +8,5 @@ eye.addEventListener("click", () => {
 });
 
 let locationChange=()=>{
-window.location.assign("./signup.html")
+window.location.assign("./signup")
 }

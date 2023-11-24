@@ -21,4 +21,4 @@ def signUp():
         print(dob)
         print(password)
         print(cpassword)
-    return redirect(url_for('/'))
+    
