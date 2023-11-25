@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% if title %}
+    <title>
+        
+        {{title}}</title>
+        {% endif %}
+    <link rel="stylesheet" href="../static/home.css">
 </head>
 <body>
-    <h1>hello world!</h1>
+
+
+    {% if message!=404  %}
+    <h1>Welcome!! </h1>
+    <section>
+    <ul>
+       <h2>Currently Login User</h2>
+    
+    <li><span class="list">Username</span> <span>:</span> <span class="value">{{message['username']}}</span></li>
+    <li><span class="list">First Name</span> <span>:</span> <span class="value">{{message['fname']}}</span></li>
+    <li><span class="list">Last Name</span> <span>:</span> <span class="value">{{message['lname']}}</span></li>
+    <li><span class="list">Email</span> <span>:</span> <span class="value">{{message['email']}}</span></li>
+    <li><span class="list">Phone Number</span> <span>:</span> <span class="value">{{message['phone']}}</span></li>
+    <li><span class="list">Date Of Birth</span> <span>:</span> <span class="value">{{message['dob']}}</span></li>
+    </ul>
+</section>
+    {% endif %}
+    {% if message==404 %}
+    <h1>404 page not found</h1>
+    {% endif %}
 </body>
 </html>

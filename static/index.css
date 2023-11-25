@@ -25,6 +25,13 @@ font-family: 'Poppins', sans-serif;
 
 
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+}
 .content{
 height: 370px;
 width: 500px;
